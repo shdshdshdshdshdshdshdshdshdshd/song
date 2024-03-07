@@ -7,7 +7,7 @@ create table NewBook(
 
 drop table Newbook;
 create table NewBook(
-	bookid integer primary key,
+	bookid integer,
     bookname varchar(20),
     publisher varchar(20),
     price integer,
@@ -24,11 +24,11 @@ create table NewBook(
     create table NewCustomer(
     custid integer primary key,
     name varchar(40),
-    sdress varchar(40),
+    adress varchar(40),
     phone varchar(30)
     );
     
-create table newOrders(
+create table NewOrders(
 orderid integer,
 custid integer not null,
 bookid integer not null,
